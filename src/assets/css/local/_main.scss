@@ -1,0 +1,109 @@
+.main{
+  position: relative;
+}
+
+.main::after {
+  content: "";
+  background-image: url(../img/cloud.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: calc(var(--index) * 40);
+  bottom: calc(var(--index) * -1.5);
+}
+
+.parallax {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    // .parallax_item
+  
+    &__item {
+      position: absolute;
+      background-size: cover;
+      background-position: center;
+      will-change: transform;
+      z-index: 2;
+      transition: var(--transition);
+      width: 100%;
+    }
+  
+    // .parallax__text
+  
+    &__offer-container {
+      z-index: 1;
+      margin-top: calc(var(--index) * 6);
+      display: flex;
+    }
+  
+    &__contact {
+      margin-right: calc(var(--index) * 3);
+      transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+    }
+  
+    &__offer {
+      transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+      // transition: var(--transition);
+      will-change: transform;
+      font-weight: 700;
+      color: $text-color;
+    }
+    
+  
+    // .parallax__title
+  
+    &__title {
+      font-size: calc(var(--index) * 2);
+      letter-spacing: calc(var(--index) / 10);
+      width: 60%;
+      margin-top: calc(var(--index) * -0.75);
+      color: $text-color;
+    }
+  
+    // .parallax__subtitle
+  
+    &__subtitle {
+      font-size: calc(var(--index) / 1.156);
+      color: $text-color;
+      width: 25%;
+      margin: 20px 0;
+    }
+  
+    &__btn {
+      font-size: calc(var(--index) / 1.175);
+    }
+  
+    // .parallax__base
+  
+    &__base {
+      background-image: url(../img/sky.jpg);
+      transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+      z-index: 0;
+      height: 100%;
+      width: 100%;
+    }
+  
+    // .parallax__middle
+  
+    &__middle {
+      background-image: url(../img/hilldoor.png);
+      transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+    }
+  
+    // .parallax__front
+  
+    &__front {
+      background-image: url(../img/alicehill.png);
+      transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+    }
+  
+  }

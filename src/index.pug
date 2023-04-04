@@ -1,0 +1,81 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" type="text/css" href="assets/css/main.css")
+        title Document
+    body 
+        .wrapper
+            .content
+                header.header
+                    .container
+                        .navigation.header__nav 
+                            .logo 
+                                img.logo__img(src="assets/img/boosty.svg", alt="")
+                                a.logo__title(href="#") EnglishFlash
+                            nav.menu.navigation__menu 
+                                ul.menu__wrapper 
+                                    li.menu__item
+                                        a.menu__link Курсы
+                                    li.menu__item
+                                        a.menu__link Обо мне
+                                    li.menu__item
+                                        a.menu__link Репититорство
+                                    li.menu__item
+                                        a.menu__link Отзывы
+                            .button.button_border
+                                a.btn Узнай свой уровень
+                section.main
+                    .parallax
+                        .parallax__item.parallax__base
+                        .parallax__item.parallax__middle
+                        .parallax__item.parallax__front
+                        .parallax__item.parallax__content
+                            .container    
+                                .parallax__offer-container
+                                    .parallax__contact.contact
+                                        img.contact__item(src="assets/img/boosty.svg", alt="")
+                                        img.contact__item(src="assets/img/youtube.svg", alt="")
+                                        img.contact__item(src="assets/img/telegram.svg", alt="")
+                                    .parallax__offer
+                                        h1.parallax__title Выучить английский можно быстрее чем кажется
+                                        p.parallax__subtitle Курс “Читаем  Алису в Стране Чудес в Оригинале”
+                                        .button.button_fill.parallax__btn
+                                            a.btn Купить курс 
+                section.question
+                    .container
+                        h2.question__title Это про тебя? Тогда записывайся!
+                        .question__container
+                            .question__color-fon
+                            canvas(id="canvas" width="1200px" height="600px")
+                            img.question__img(src="assets/img/Alice.png", alt="")
+                            .question__card.question__card_right-first
+                                p.question__text Все знаешь, а не можешь ничего сказать?
+                            .question__card.question__card_right-second
+                                p.question__text Не можешь разобраться с временами?
+                            .question__card.question__card_middle
+                                p.question__text Хочешь получить результат быстро?
+                            .question__card.question__card_left-first
+                                p.question__text Не можешь понять речь на слух?
+                            .question__card.question__card_left-second
+                                p.question__text Не знаешь, с чего начать? С "фундамента"
+                section.alice-cours 
+                    .container
+                        .alice-cours__text-block
+                            h2.alice-cours__title Купить курс “Алиса в Стране Чудес”
+                            p.alice-cours__subtitle Противоположная точка зрения подразумевает, что элементы политического процесса представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть.
+                            ul.alice-cours__about-wrapper 
+                                li.alice-cours__about-item Противоположная точка зрения
+                                li.alice-cours__about-item
+                                li.alice-cours__about-item
+                                li.alice-cours__about-item
+                            .button.button_fill
+                                a.btn Купить курс     
+
+        script(src="libs/gsap/gsap.min.js" defer)
+        script(src="libs/gsap/ScrollTrigger.min.js" defer)
+        script(src="libs/gsap/ScrollSmoother.min.js" defer)
+        script(src="script.js" defer)  
+                                                    

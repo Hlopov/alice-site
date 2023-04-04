@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>Document</title>
+  </head>
+  <body> 
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <div class="container">
+            <div class="navigation header__nav"> 
+              <div class="logo"> <img class="logo__img" src="assets/img/boosty.svg" alt=""><a class="logo__title" href="#">EnglishFlash</a></div>
+              <nav class="menu navigation__menu"> 
+                <ul class="menu__wrapper"> 
+                  <li class="menu__item"><a class="menu__link">Курсы</a></li>
+                  <li class="menu__item"><a class="menu__link">Обо мне</a></li>
+                  <li class="menu__item"><a class="menu__link">Репититорство</a></li>
+                  <li class="menu__item"><a class="menu__link">Отзывы</a></li>
+                </ul>
+              </nav>
+              <div class="button button_border"><a class="btn">Узнай свой уровень</a></div>
+            </div>
+          </div>
+        </header>
+        <section class="main">
+          <div class="parallax">
+            <div class="parallax__item parallax__base"></div>
+            <div class="parallax__item parallax__middle"></div>
+            <div class="parallax__item parallax__front"></div>
+            <div class="parallax__item parallax__content">
+              <div class="container">   
+                <div class="parallax__offer-container">
+                  <div class="parallax__contact contact"><img class="contact__item" src="assets/img/boosty.svg" alt=""><img class="contact__item" src="assets/img/youtube.svg" alt=""><img class="contact__item" src="assets/img/telegram.svg" alt=""></div>
+                  <div class="parallax__offer">
+                    <h1 class="parallax__title">Выучить английский можно быстрее чем кажется</h1>
+                    <p class="parallax__subtitle">Курс “Читаем  Алису в Стране Чудес в Оригинале”</p>
+                    <div class="button button_fill parallax__btn"><a class="btn">Купить курс </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="question">
+          <div class="container">
+            <h2 class="question__title">Это про тебя? Тогда записывайся!</h2>
+            <div class="question__container">
+              <div class="question__color-fon"></div>
+              <canvas id="canvas" width="1200px" height="600px"></canvas><img class="question__img" src="assets/img/Alice.png" alt="">
+              <div class="question__card question__card_right-first">
+                <p class="question__text">Все знаешь, а не можешь ничего сказать?</p>
+              </div>
+              <div class="question__card question__card_right-second">
+                <p class="question__text">Не можешь разобраться с временами?</p>
+              </div>
+              <div class="question__card question__card_middle">
+                <p class="question__text">Хочешь получить результат быстро?</p>
+              </div>
+              <div class="question__card question__card_left-first">
+                <p class="question__text">Не можешь понять речь на слух?</p>
+              </div>
+              <div class="question__card question__card_left-second">
+                <p class="question__text">Не знаешь, с чего начать? С "фундамента"</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="alice-cours"> 
+          <div class="container">
+            <div class="alice-cours__text-block">
+              <h2 class="alice-cours__title">Купить курс “Алиса в Стране Чудес”</h2>
+              <p class="alice-cours__subtitle">Противоположная точка зрения подразумевает, что элементы политического процесса представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть.</p>
+              <ul class="alice-cours__about-wrapper"> 
+                <li class="alice-cours__about-item">Противоположная точка зрения</li>
+                <li class="alice-cours__about-item"></li>
+                <li class="alice-cours__about-item"></li>
+                <li class="alice-cours__about-item"></li>
+              </ul>
+              <div class="button button_fill"><a class="btn">Купить курс     </a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="script.js" defer> </script>
+  </body>
+</html>
